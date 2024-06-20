@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1>Admin panel</h1>
+    <hr>
+</section>
+<p>Добавьте билет:</p>
+<section>
+    <input id="timeDeparture" type="time" placeholder="Время отправления">
+    <input id="timeArrival" type="time" placeholder="Время прибытия">
+    <input id="whereFrom" type="text" placeholder="Откуда">
+    <input id="from" type="text" placeholder="Куда">
+    <input id="date" type="date" placeholder="Дата">
+    <input id="counter" type="number" placeholder="Укажите расстояние (км)">
+    <button id="addTicket" type="button">Добавить</button>
+</section>
+<script>
+    const timeDeparture = document.getElementById('timeDeparture');
+    const timeArrival = document.getElementById('timeArrival');
+    const whereFrom = document.getElementById('whereFrom');
+    const from = document.getElementById('from');
+    const date = document.getElementById('date');
+    const addTicket = document.getElementById('addTicket');
+    const counter = document.getElementById('counter');
+    
+    // Берем value инпунтов
+    addTicket.addEventListener("click", () => {
+        let priceTicket = counter.value*4
+        let successful = document.createElement('section');
+        let cardTicket = document.createElement('section');
+        let sectionThree = document.createElement('section');
+        successful.className = "tickets";
+        successful.innerHTML = "<strong>Билет добавлен!</strong> Перепроверьте данные на всякий случай :)";
+        cardTicket.innerHTML = `<section id="topTickets" class="topTickets">
+            <section class="columnOne">
+                <strong>${timeDeparture.value}</strong>
+                <p>${whereFrom.value}</p>
+                </section>
+                <section class="columnTwo">
+                    <strong>${timeArrival.value}</strong>
+                    <p>${from.value}</p>
+                    </section>
+                    <section class="columnThree">
+                        <p class="priceTicket">${priceTicket}₽</p>
+                        </section>
+                        <section>
+                            <button class="removeButton" type="button">Delete</button>
+                        </section>
+                        </section>`;
+                        setTimeout(() => {
+                            successful.remove()
+                        }, 2000);
+                        
+                        document.body.append(successful, cardTicket, sectionThree);
+
+
+                       
+                        const deleteTicket = cardTicket.querySelector('.removeButton')
+                        deleteTicket.addEventListener("click", () => {
+                            cardTicket.remove();
+                        })
+                    }) 
+
+    // Подсчёт стоимости билета
+
+</script>
+<style>
+    .tickets {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+
+    .topTickets {
+        display: flex;
+        background-color: #a7cfc4;
+        border-radius: 2px;
+        padding: 5px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333;
+        border-collapse: collapse;
+        border-right: 2px solid #AAA;
+        border-top: 2px solid #AAA;
+        border-left: 2px solid #AAA;
+    }
+
+    .columnOne {
+        display: grid;
+        padding: 2vh;
+    }
+
+    .columnTwo {
+        display: grid;
+        padding: 2vh;
+    }
+
+
+    .priceTicket {
+        color: #00a500;
+        font-size: x-large;
+        font-family: Roboto, sans-serif;
+        font-weight: bolder;
+        background-color: gold;
+        padding: 5px;
+        border-radius: 5px;
+    }
+</style>
+</body>
+</html>
