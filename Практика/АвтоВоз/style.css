@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(FonIndex.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    gap: 90vh;
+    justify-content: center;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.art1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+h1{
+    font-size: 46px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;   
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;   
+}
+
+p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+
+.red{
+    color: #000;
+}
+#rigistra:hover{
+    color: #d7cafb;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.naitiReise{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+
+}
+
+.naitiReiseArt{
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+input{
+    width: 25vh;
+    padding: 2vh;
+    height: 3vh;
+    border-radius: 20px;
+    border: none;
+    
+    font-size: 20px;
+
+    color: #818181;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+input:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+
+
+select{
+    width: 28vh;
+    padding: 1vh;
+    height: 7vh;
+    border-radius: 20px;
+
+    font-size: 20px;
+
+    color: #818181;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+select:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+option{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+
+button{
+    background-color: #6A3EE8;
+    width: 25vh;
+    height: 7vh;
+    border-radius: 20px;
+    border: none;
+
+    font-size: 24px;
+
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+button:hover{
+    background-color: #5b34c8;
+}
+
+footer{
+    margin-top: 33vh;
+    padding: 5vh;
+    height: 1vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+
+}
+
+
+.dialogPoz{
+    height: 80vh;
+    width: 80vh;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: none;
+    border-radius: 2rem;
+    padding: 15px;
+    outline: none;
+    z-index:2;
+  
+    background-image: url(registr.png);
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+.fooPol{
+    color: #000;
+}
+
+.fooPol:hover{
+    color: #6A3EE8;
+}
+
+.dialogavto{
+    height: 80vh;
+    width: 80vh;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: none;
+    border-radius: 2rem;
+    padding: 15px;
+    outline: none;
+    z-index:2;
+  
+    background-image: url(avto1.png);
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.secPozDia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 8vh;
+}
+
+.int1{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.43);;
+    width: 30vh;
+    padding: 2vh;
+    height: 2vh;
+    border-radius: 20px;
+    border: none;
+    
+    font-size: 20px;
+
+    color: #818181;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.artreg{
+    display: flex;
+    gap: 2vh;
+}
+
+
+/* input Numbers убирает стрелки */
+/* Google */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* FeirFox */
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+/* Другое */
+  input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* /input Numbers убирает стрелки */
+
+
+.Posi_close1{
+    display: flex;
+    justify-content: end;
+}
+
+.Posi_close11{
+    display: flex;
+    justify-content: end;
+}
+
+
+.modal-open {
+    overflow: hidden;
+    }
+
+    .close1{
+        fill: #000;
+    }
